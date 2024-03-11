@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registration Form</title>
+    <title>Search Student By Roll Number</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -46,23 +46,14 @@
 </head>
 <body>
     <div class="container">
-        <h2>Student Registration Form</h2>
-        <form action="register" method="post">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            </div>
+        <h2>Search Student By Roll Number</h2>
+        <form action="getStudent" method="post">
             <div class="form-group">
                 <label for="rollno">Roll No:</label>
-                <input type="text" id="rollno" name="rollno" placeholder="Enter your roll number" required>
+                <input type="text" id="rollno" name="rollno" placeholder="Enter roll number to fetch Student details" required>
             </div>
-            <div class="form-group">
-                <label for="address">Address:</label>
-                <input type="text" id="address" name="address" placeholder="Enter your address" required>
-            </div>
-            <input type="submit" value="Register">
+            <input type="submit" value="Submit">
         </form>
     </div>
-    <a href="index2.jsp">Click here to Fetch Student Details</a>
 </body>
 </html>
