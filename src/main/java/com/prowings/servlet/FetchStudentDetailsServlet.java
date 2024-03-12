@@ -54,6 +54,16 @@ public class FetchStudentDetailsServlet extends HttpServlet{
         	req.getRequestDispatcher("/Error.jsp").forward(req, resp);
         }
         
+        
+        
+	}
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		System.out.println("inside delete method!!");
+		String id = req.getParameter("id");
+		System.out.println("Deleting Student with id : "+id);
 	}
 	
 	

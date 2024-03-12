@@ -63,6 +63,19 @@
             <input type="submit" value="Register">
         </form>
     </div>
+    
+    </div>
+        <div class="container">
+        <h2>Do Post with MyParam</h2>
+        <form action="register" method="post">
+            <div class="form-group">
+                <label for="myParam">Param:</label>
+                <input type="text" id="myParam" name="myParam" placeholder="Enter param" required>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
     <a href="index2.jsp">Click here to Fetch Student Details</a>
 </body>
 </html>

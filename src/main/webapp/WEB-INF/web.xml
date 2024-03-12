@@ -8,7 +8,7 @@
 
 	<servlet>
 		<servlet-name>StudentServlet</servlet-name>
-		<servlet-class>com.prowings.servlet.StudentServlet</servlet-class>
+		<servlet-class>com.prowings.servlet.StudentServlet2</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>StudentServlet</servlet-name>
@@ -18,10 +18,31 @@
 	<servlet>
 		<servlet-name>FetchStudentDetailsServlet</servlet-name>
 		<servlet-class>com.prowings.servlet.FetchStudentDetailsServlet</servlet-class>
+		
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>FetchStudentDetailsServlet</servlet-name>
 		<url-pattern>/getStudent</url-pattern>
 	</servlet-mapping>
+<!-- 
+	<servlet>
+		<servlet-name>DeleteStudentDetailsServlet</servlet-name>
+		<servlet-class>com.prowings.servlet.DeleteStudentDetailsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteStudentDetailsServlet</servlet-name>
+		<url-pattern>/deleteStudent</url-pattern>
+	</servlet-mapping>
 
-</web-app>
+ -->
+ 
+ 	<filter>
+ 		<filter-name>MyFilter</filter-name>
+ 		<filter-class>com.prowings.servlet.MyFilter</filter-class>
+ 	</filter>
+ 	
+ 	<filter-mapping>
+ 		<filter-name>MyFilter</filter-name>
+ 		<url-pattern>/*</url-pattern>
+ 	</filter-mapping>
+ </web-app>

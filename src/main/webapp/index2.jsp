@@ -55,5 +55,16 @@
             <input type="submit" value="Submit">
         </form>
     </div>
+        <div class="container">
+        <h2>Delete Student By id</h2>
+        <form action="getStudent" method="get">
+            <div class="form-group">
+                <label for="rollno">Id:</label>
+                <input type="text" id="id" name="id" placeholder="Enter id to delete Student" required>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
 </body>
 </html>
